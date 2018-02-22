@@ -9,16 +9,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/animation.css">
+
 </head>
 <body>
 
 <header class="bg-dark">
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-6">
                 <div id="time"></div>
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 <nav class="nav nav-pills flex-column flex-sm-row">
                     <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
                     <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
@@ -49,7 +51,8 @@
                     <img class="card-img-top" src="assets/images/team.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Team work</h5>
-                        <p class="card-text">This is incredibly important nowadays. Nice collaboration skills definitely will help me in the future.</p>
+                        <p class="card-text">This is incredibly important nowadays. Nice collaboration skills definitely
+                            will help me in the future.</p>
                     </div>
                 </div>
 
@@ -57,10 +60,29 @@
                     <img class="card-img-top" src="assets/images/knowledge.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Knowledge</h5>
-                        <p class="card-text">In the end, obviously, I expect to receive the some practical skills to use them for my future work.</p>
+                        <p class="card-text">In the end, obviously, I expect to receive the some practical skills to use
+                            them for my future work.</p>
                     </div>
                 </div>
             </div>
+
+            <div class="animation">
+                <div class="row">
+                    <div class="col-8">
+                        <h4>Bored? Take a look at a nice sprite animation! Press the button!</h4>
+                    </div>
+                    <div class="col-4">
+                        <a class="btn btn-primary" href="#popup">The button</a>
+                        <a href="#" class="popup-overlay" id="popup">
+                            <div class="popup-content">
+                                <div id="girl"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
         <div class="col-3 offset-1 personal-info">
@@ -112,6 +134,9 @@
         </div>
     </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="assets/scripts/animation.js"></script>
 
 <script src="assets/scripts/logic.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
