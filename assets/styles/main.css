@@ -16,13 +16,17 @@ header {
     padding-top: 4px;
 }
 
-header nav {
+.desktop-menu nav {
     float: right;
 }
 
-header #time {
+header #time-desktop, #time-mobile {
     padding-top: 6px;
     color: white;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 .page-body {
@@ -42,8 +46,27 @@ header #time {
     display: block;
 }
 
+@media(max-width: 575px) {
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
 
+    .desktop-menu {
+        display: none;
+    }
 
+    .page-body {
+        height: auto;
+        padding-top: 2rem;
+    }
+
+    .animation {
+        display: none;
+    }
+}
 
 
 

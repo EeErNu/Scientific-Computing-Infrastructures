@@ -15,12 +15,9 @@
 <body>
 
 <header class="bg-dark">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div id="time"></div>
-            </div>
-            <div class="col-6">
+    <div class="pos-f-t mobile-menu">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
                 <nav class="nav nav-pills flex-column flex-sm-row">
                     <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
                     <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
@@ -29,12 +26,37 @@
                 </nav>
             </div>
         </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="time-mobile"></div>
+
+        </nav>
+    </div>
+
+    <div class="container desktop-menu">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div id="time-desktop"></div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="">
+                    <nav class="nav nav-pills flex-column flex-sm-row">
+                        <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+                        <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 
 <div class="container page-body">
     <div class="row">
-        <div class="col-8 main-content">
+        <div class="col-sm-12 order-12 order-md-1 col-md-8 main-content">
 
             <h1>Course Expectations</h1>
             <div class="card-deck">
@@ -85,7 +107,7 @@
 
         </div>
 
-        <div class="col-3 offset-1 personal-info">
+        <div class="col-sm-12 order-1 order-md-12 col-md-3 offset-md-1 personal-info">
             <div class="card-deck">
                 <div class="card">
                     <img class="card-img-top" src="assets/images/portret.png">

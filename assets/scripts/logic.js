@@ -12,7 +12,9 @@
         var minute = checkTime(today.getMinutes());
         var second = checkTime(today.getSeconds());
 
-        document.getElementById('time').innerHTML = days[today.getDay()] + ', ' + dayNumber + ' of ' + months[today.getMonth()] + ' ' + hour + ':' + minute + ':' + second;
+        document.getElementById('time-desktop').innerHTML = days[today.getDay()] + ', ' + dayNumber + ' of ' + months[today.getMonth()] + ' ' + hour + ':' + minute + ':' + second;
+        document.getElementById('time-mobile').innerHTML = days[today.getDay()] + ', ' + dayNumber + ' of ' + months[today.getMonth()] + ' ' + hour + ':' + minute + ':' + second;
+
         t = setTimeout(function () {
             startTime()
         }, 500);
