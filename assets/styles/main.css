@@ -47,6 +47,10 @@ header #time-desktop, #time-mobile {
 }
 
 @media(max-width: 575px) {
+    header, footer {
+        height: auto;
+    }
+
     .mobile-menu {
         display: block;
         position: absolute;
